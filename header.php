@@ -108,7 +108,7 @@ require_once "define.php";
                         <span>Dashboard</span>
                     </a>
                 </li>
-                <li>
+                <!-- <li>
                     <a class="<?= checkSetActive("orders") ?>" href="#">
                         <span class="nav-link-icon">
                             <i class="bi bi-receipt"></i>
@@ -123,13 +123,13 @@ require_once "define.php";
                             <a href="orders?status=completed">Completed</a>
                         </li>
                     </ul>
-                </li>
+                </li> -->
                 <li>
                     <a class="<?= checkSetActive("product") ?>" href="#">
                         <span class="nav-link-icon">
                             <i class="bi bi-truck"></i>
                         </span>
-                        <span>Products</span>
+                        <span>Project</span>
                     </a>
                     <ul>
                         <li>
@@ -140,7 +140,7 @@ require_once "define.php";
                         </li>
                     </ul>
                 </li>
-                <li>
+                <!-- <li>
                     <a class="<?= checkSetActive("variant") ?>" href="#">
                         <span class="nav-link-icon">
                             <i class="bi bi-truck"></i>
@@ -155,8 +155,8 @@ require_once "define.php";
                             <a href="variant?action=view">View</a>
                         </li>
                     </ul>
-                </li>
-                <li>
+                </li> -->
+                <!-- <li>
                     <a class="<?= checkSetActive("collections") ?>" href="#">
                         <span class="nav-link-icon">
                             <i class="bi bi-wallet2"></i>
@@ -171,8 +171,8 @@ require_once "define.php";
                             <a href="collections?action=view">View</a>
                         </li>
                     </ul>
-                </li>
-                <li>
+                </li> -->
+                <!-- <li>
                     <a class="<?= checkSetActive("categories") ?>" href="#">
                         <span class="nav-link-icon">
                             <i class="bi bi-wallet2"></i>
@@ -187,15 +187,15 @@ require_once "define.php";
                             <a href="categories?action=view">View</a>
                         </li>
                     </ul>
-                </li>
-                <li>
+                </li> -->
+                <!-- <li>
                     <a class="<?= checkSetActive("customers") ?>" href="customers">
                         <span class="nav-link-icon">
                             <i class="bi bi-person-badge"></i>
                         </span>
                         <span>Customers</span>
                     </a>
-                </li>
+                </li> -->
                 <li class="menu-divider">Pages</li>
                 <li>
                     <a class="<?= checkSetActive("settings") ?>" href="settings">
@@ -240,7 +240,7 @@ require_once "define.php";
                 <ul class="navbar-nav justify-content-end">
                     <li class="nav-item ms-3">
                         <button class="btn btn-primary btn-icon prompt-add-product">
-                            <i class="bi bi-plus-circle"></i> Add Product
+                            <i class="bi bi-plus-circle"></i> Add Project
                         </button>
                     </li>
                 </ul>
