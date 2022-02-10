@@ -20,7 +20,7 @@ $(document).ready(function (e) {
 
         loadUserInfo();
 
-        if(page == "product") {
+        if(page == "product") { 
             if(param == "new") {
                 loadCollections(page);
                 loadCategories(page);
@@ -56,6 +56,15 @@ $(document).ready(function (e) {
             else if (param == "edit") {
                 loadCollections(page);
                 loadSingleCategory(page);
+            }
+        }
+        if(page == "project") {
+            
+            if(param == "view") {
+                loadPageProjects(page);
+            }
+            else if (param == "edit") {
+                loadSingleProject(page);
             }
         }
     }

@@ -125,7 +125,7 @@ require_once "define.php";
                     </ul>
                 </li> -->
                 <li>
-                    <a class="<?= checkSetActive("product") ?>" href="#">
+                    <a class="<?= checkSetActive("project") ?>" href="#">
                         <span class="nav-link-icon">
                             <i class="bi bi-truck"></i>
                         </span>
@@ -133,10 +133,10 @@ require_once "define.php";
                     </a>
                     <ul>
                         <li>
-                            <a href="product?action=new">Create</a>
+                            <a href="project?action=new">Create</a>
                         </li>
                         <li>
-                            <a href="product?action=view">View</a>
+                            <a href="project?action=view">View</a>
                         </li>
                     </ul>
                 </li>

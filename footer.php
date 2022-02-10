@@ -49,6 +49,7 @@
 <script src="functions/admin/category.js"></script>
 <script src="functions/admin/collections.js"></script>
 <script src="functions/admin/product.js"></script>
+<script src="functions/admin/project.js"></script>
 
 <!-- <script src="functions/user/products.js"></script> -->
 

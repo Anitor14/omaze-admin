@@ -13,47 +13,42 @@ $action = isset($_GET["action"]) ? addslashes($_GET["action"]) : "";
         <div class="row">
             <div class="order-2 order-lg-1 col-lg-12 bd-content">
 
-                <h4 class="edit-category-main">Add A New Category</h4>
+                <h4 class="edit-project-main">Add New Project</h4>
 
                 <input type="hidden" class="form-control" id="_item_id">
 
                 <div class="card">
                     <div class="card-body">
-                        <div class="row">
 
+                        <div class="row">
                             <div class="col-md-12">
                                 <div class="mb-3">
-                                    <label for="imagePath" class="form-label">Featured Image</label>
-                                    <input type="file" class="form-control" id="images" name="images" accept="image/*" multiple />
+                                    <label for="images" class="form-label">Featured Image</label>
+                                    <input type="file" class="form-control" id="images" name="images" accept="image/*" multiple/>
                                 </div>
                             </div>
 
                             <div class="col-md-12">
                                 <div class="mb-3">
-                                    <label for="title" class="form-label">Category Title</label>
+                                    <label for="title" class="form-label">Project Title</label>
                                     <input type="text" class="form-control" id="title">
                                 </div>
                             </div>
-
-                            <div class="col-md-12">
-                                <div class="mb-3">
-                                    <label for="collection" class="form-label">Collection (leave at default if none) </label>
-                                    <select id="collection" name="collection" class="form-control"></select>
-                                </div>
-                            </div>
-
                         </div>
+
                         <div>
                             <label for="description" class="form-label">Description</label>
                             <textarea class="form-control" id="description" rows="3"></textarea>
                         </div>
+                        
                     </div>
 
                     <div>
-                        <button style="float: right !important; margin-right: 15px !important;" type="button" class="btn btn-primary" id="saveCategoriesChanges">Save Changes</button>
+                        <button style="float: right !important; margin-right: 15px !important;" type="button" class="btn btn-primary" id="saveProjectChanges">Save Changes</button>
                     </div>
 
                 </div>
+
 
             </div>
         </div>
@@ -63,7 +58,7 @@ $action = isset($_GET["action"]) ? addslashes($_GET["action"]) : "";
         <div class="row">
             <div class="order-2 order-lg-2 col-lg-12 bd-content">
 
-                <h4>Categories </h4>
+                <h4></h4>
 
                 <div class="card">
                     <div class="card-body">
@@ -73,7 +68,6 @@ $action = isset($_GET["action"]) ? addslashes($_GET["action"]) : "";
                                     <th>S/No</th>
                                     <th>Title</th>
                                     <th>Description</th>
-                                    <th>Is Default?</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -83,14 +77,12 @@ $action = isset($_GET["action"]) ? addslashes($_GET["action"]) : "";
                                     <th>S/No</th>
                                     <th>Title</th>
                                     <th>Description</th>
-                                    <th>Is Default?</th>
                                     <th>Action</th>
                                 </tr>
                             </tfoot>
 
-                            <tbody id="tableCategories">
+                            <tbody id="tableProjects">
                             </tbody>
-
                         </table>
                     </div>
                 </div>

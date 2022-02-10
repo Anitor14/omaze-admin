@@ -7,7 +7,7 @@ const KEYS = {
     paystack: {
         test: "pk_test_a91f18d0340283decdb520066905d6630bc708b3",
         live: "pk_test_a91f18d0340283decdb520066905d6630bc708b3",
-    },
+    },  
     flutterwave: {
         test: "pk_test_a91f18d0340283decdb520066905d6630bc708b3",
         live: "pk_test_a91f18d0340283decdb520066905d6630bc708b3",
@@ -63,6 +63,7 @@ const ENDPOINTS = Object.freeze({
     product: "admin/product",
     categories: "admin/category",
     collections: "admin/collection",
+    project:"admin/project",
 
     variants: {
         addVariants: "users/variants",
@@ -94,7 +95,7 @@ const ENDPOINTS = Object.freeze({
     },
 });
 
-const REMOVAL_COUNT = 12;
-// const REMOVAL_COUNT = 1;
+// const REMOVAL_COUNT = 12;
+const REMOVAL_COUNT = 13;
 
 const SUCCESS_CODES = [200, 201];

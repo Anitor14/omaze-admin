@@ -136,6 +136,26 @@ function loadSingleProduct(page) {
 
 }
 
+function loadSingleProject(page) {
+
+  const _id = searchParam("_id");
+  $("#_item_id").val(_id);
+
+  custom_axios_with_login_headers("GET", `${BASE_URL + ENDPOINTS.project}/${_id}`, {}).then(function (response) {
+
+    const data = response.data.projects;
+
+    $("#title").val(data.title);
+    $("#description").val(data.description);
+
+    if (_id != "") {
+      $(".edit-project-main").html(`Edit '${data.title}' Collection`);
+    }
+
+  }).catch((error) => console.error(error));
+
+}
+
 function loadProducts(page, dat) {
   custom_axios_with_login_headers("GET", BASE_URL + ENDPOINTS.product, {}).then(function (response) {
     const data = response.data.products;
@@ -208,6 +228,29 @@ function loadPageCategories(page) {
         </tr>`;
       });
       $("#tableCategories").html(output);
+      setupDataTable();
+    }
+  }).catch((error) => console.error(error));
+}
+
+function loadPageProjects(page) {
+  custom_axios_with_login_headers("GET", BASE_URL + ENDPOINTS.project, {}).then(function (response) {
+    const data = response.data.projects;
+    if (page == "project") {
+      var output = "";
+      var index = 1;
+      data.map((project) => {
+        output += `<tr>
+            <td>${index++}</td>
+            <td>${project.title}</td>
+            <td>${project.description}</td>
+            <td>
+              <a class="btn btn-warning" href="collections?action=edit&_id=${project._id}">Edit</button>
+              <a class="btn btn-danger remove-item" href="javascript:void(0);" data-id="${project._id}" data-model="collection" data-title="${project.title}">Delete</button>
+            </td>
+        </tr>`;
+      });
+      $("#tableProjects").html(output);
       setupDataTable();
     }
   }).catch((error) => console.error(error));
