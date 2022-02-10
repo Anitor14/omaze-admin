@@ -1,5 +1,5 @@
-// const BASE_URL = "https://evening-mountain-86930.herokuapp.com/";
-const BASE_URL = "http://localhost:4000/api/v1/";
+const BASE_URL = "https://evening-mountain-86930.herokuapp.com/";
+// const BASE_URL = "http://localhost:4000/api/v1/";
 
 const KEYS = {
     token: "yuduis787878755tokk88",
@@ -95,7 +95,7 @@ const ENDPOINTS = Object.freeze({
     },
 });
 
-// const REMOVAL_COUNT = 12;
+
 // const REMOVAL_COUNT = 13;
 const REMOVAL_COUNT = 1;
 
