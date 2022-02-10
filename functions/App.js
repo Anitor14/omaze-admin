@@ -1,5 +1,5 @@
 $(document).ready(function (e) {
-
+    console.log('welcome to the app')
     console.log(page);
 
     if(AUTH_PAGE.includes(page)) {
